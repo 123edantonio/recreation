@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Form Recreation</title>
+   <body style="background-color:whitesmoke">
+   <style>
+     .dropbtn {
+              background-color: whitesmoke;
+              color: black;
+              padding: 10px;
+              font-size: 16px;
+              border: none;
+            }
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            .dropdown-content a:hover {background-color: #ddd;}
+            .dropdown:hover .dropdown-content {display: block;}
+            .dropdown:hover .dropbtn {background-color:indigo;}
+    </style>
+ </head>
+ <body>
+   <table style="background-color:whitesmoke">
+    <tr>
+  <h2>Confirm order and pay</h2>
+    </tr>
+    <tr>
+   <p style="color:rgb(143, 142, 142)">Please make the payment, after that you can enjoy all
+   <br/>the features and benefits</p>
+    </tr>
+    <tr>
+      <td>
+   <form>
+     <table style="background-color: white">
+       <tr>
+         <td>
+           <h4>Payment Details</h4>
+         </td>
+       </tr>
+       <tr>
+         <td>
+           <label for="name" style="font-size: 60%; color:rgb(143, 142, 142)">Name on card</label>
+           <br/>
+           <input type="text" name="name">
+       </tr>
+       <tr>
+         <td>
+           <label for="card number" style="font-size: 60%; color:rgb(143, 142, 142">Card number</label>
+           <br/>
+           <input type="number" name="card number">
+         </td>
+         <td>
+           <label for="expiry" style="font-size: 60%; color:rgb(143, 142, 142">Expiry</label>
+           <br/>
+           <input type="date" name="expiry">
+         </td>
+         <td>
+           <label for="cvv" style="font-size: 60%; color:rgb(143, 142, 142">CVV</label>
+           <br/>
+           <input type="number" name="cvv">
+         </td>
+       </tr>
+       <tr>
+         <td>
+           <h4>Billing Address</h4>
+         </td>
+       </tr>
+       <tr>
+         <td>
+           <label for="street" style="font-size: 60%; color:rgb(143, 142, 142">Street address</label>
+           <br/>
+           <input name="street">
+         </td>
+         <td>
+            <label for="city" style="font-size: 60%; color:rgb(143, 142, 142">City</label>
+            <br/>
+            <input name="city">
+       </tr>
+       <tr>
+         <td>
+            <label for="state" style="font-size: 60%; color:rgb(143, 142, 142">State/Province</label>
+            <br/>
+            <div class="dropdown">
+              <button class="dropbtn">State/Province</button>
+              <div class="dropdown-content">
+                <a href="#">Alabama</a>
+                <a href="#">Alaska</a>
+                <a href="#">Arizona</a>
+                <a href="#">Arkansas</a>
+                <a href="#">California</a>
+                <a href="#">Colorado</a>
+                <a href="#">Connecticut</a>
+                <a href="#">Delaware</a>
+                <a href="#">Florida</a>
+                <a href="#">Georgia</a>
+                <a href="#">Hawaii</a>
+                <a href="#">Idaho</a>
+                <a href="#">Illinois</a>
+                <a href="#">Indiana</a>
+                <a href="#">Iowa</a>
+                <a href="#">Kansas</a>
+                <a href="#">Kentucky</a>
+                <a href="#">Louisiana</a>
+                <a href="#">Maine</a>
+                <a href="#">Maryland</a>
+                <a href="#">Massachusetts</a>
+                <a href="#">Michigan</a>
+                <a href="#">Minnesota</a>
+                <a href="#">Mississippi</a>
+                <a href="#">Misouri</a>
+                <a href="#">Montana</a>
+                <a href="#">Nebraska</a>
+                <a href="#">Nevada</a>
+                <a href="#">New Hampshire</a>
+                <a href="#">New Jersey</a>
+                <a href="#">New Mexico</a>
+                <a href="#">New York</a>
+                <a href="#">North Carolina</a>
+                <a href="#">North Dakota</a>
+                <a href="#">Ohio</a>
+                <a href="#">Oklahoma</a>
+                <a href="#">Oregon</a>
+                <a href="#">Pennsylvania</a>
+                <a href="#">Rhode Island</a>
+                <a href="#">South Carolina</a>
+                <a href="#">South Dakota</a>
+                <a href="#">Tennessee</a>
+                <a href="#">Texas</a>
+                <a href="#">Utah</a>
+                <a href="#">Vermont</a>
+                <a href="#">Virginia</a>
+                <a href="#">Washington</a>
+                <a href="#">West Virginia</a>
+                <a href="#">Wisconson</a>
+                <a href="#">Wyoming</a>
+            <input name="state">
+         </td>
+         <td>
+            <label for="zip" style="font-size: 60%; color:rgb(143, 142, 142">Zip code</label>
+            <br/>
+            <input type="number" name="zip">
+       </tr>
+      </table>
+    </td>
+    <td>
+      <table style="background-color:indigo">
+        <tr>
+          <td style="color:whitesmoke; font-size: 10px"><p>You have to pay<p></td>
+        </tr>
+        <tr>
+          <td style="color:goldenrod; font-size: 35px"><p>$840.12<p><td>
+        </tr>
+        <tr>
+          <td style="color:whitesmoke; font-size: 10px"><p>Enjoy all features and perks after
+            <br/>you complete the payment</p></td>
+        </tr>
+        <tr>
+          <td style="color:goldenrod; font-size: 10px"><p>Know all features</p></td>
+        </tr>
+        <tr style="background-color: indigo;">
+          <table style="background-color:rgb(96,44,133)">
+            <tr>
+              <td style="color:whitesmoke; font-size:10px"><p>100% guaranteed support and
+                <br/>updates for the next 5 years.</p>
+              </td>
+            </tr>
+          </table>
+        </tr>
+      </table>
+    </td>
+      <table width="72%">
+        <tr>
+          <td>
+            <input type="reset">
+          </td>
+          <td>
+            <input type="submit" style="color:white; background-color:indigo;" value="Pay $840">
+          </td>
+        </tr> 
+      </table> 
+    </form>
+ </body>
+</html>
